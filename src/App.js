@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Bootstrap from "./Components/Bootstrap";
+import "./App.css";
+import ReactBoostrap from "./Components/ReactBoostrap";
+import MediaCard from "./Components/MaterialUI";
+import { Bulma } from "./Components/Bulma";
+import PersistentDrawerLeft from "./Components/DrawerMaterial";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersistentDrawerLeft />
+      <h1>Frameworks CSS con React</h1>
+      <p>para usar bulma no puedes usarlo al tiempo de usar Bootstrap, </p>
+      <hr />
+      <Bootstrap />
+      <hr />
+      <ReactBoostrap />
+      <hr />
+      <MediaCard />
+      <hr />
+      <Bulma />
+      <hr />
     </div>
   );
 }

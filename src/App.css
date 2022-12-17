@@ -1,12 +1,15 @@
 .App {
   text-align: center;
+  background-color: hsl(193, 95%, 68%, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > * {
+  padding: 0.5px;
+  margin-bottom: 1rem;
 }
-
+.App h1 {
+  margin-bottom: 2rem;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -25,7 +28,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: hsl(193, 95%, 68%);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +38,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* bootstrap */
+.card-content > div {
+  margin: 1rem auto;
+}
+h2 {
+  background-color: hsl(204, 15%, 94%);
+}
+/* bulma */
+.card {
+  max-width: 350px;
+  max-height: auto;
+  margin: 1rem auto;
 }
